@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
     body {
       background-color: #FFFF00;
@@ -9,6 +8,7 @@
     textarea {
       background-color: #FFFF00;
       border: none;
+      user-select: none;
     }
     input[type=text] {
       width: 100%;
@@ -21,7 +21,7 @@
     </style>
   </head>
   <body>
-    <textarea id="notes" rows="20" cols="50">
+    <textarea readonly id="notes" rows="20" cols="50">
     </textarea>
     <input id="note" type="text" maxlength="50">
     <!-- <input id="send" type="submit" value="Send"> -->
